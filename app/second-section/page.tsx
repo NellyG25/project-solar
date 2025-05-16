@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from "next/image";
-import PopupForm from '../pop-form/page';
+import PopupForm from '../../components/pop-form/page';
 
 const features = [
   {

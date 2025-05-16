@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import PopupForm from '../pop-form/page'; // Ensure this path is correct
+import PopupForm from '../../components/pop-form/page';
+import Image from 'next/image';
 
 export default function FirstSection() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,15 +14,17 @@ export default function FirstSection() {
         {/* Popup Form */}
         <PopupForm isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        {/* Background Image */}
-        <img
+        {/* Background Image using Next.js Image */}
+        <Image
           src="/images/image23.jpg"
           alt="Solar Panels"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          fill
+          className="absolute inset-0 object-cover opacity-70 z-0"
+          priority
         />
 
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-16 text-white">
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-16 text-white z-10">
           <div className="mb-4 flex items-center space-x-2">
             <span className="text-green-400 text-xl">★</span>
             <span className="text-sm md:text-base">100+ successful projects delivered</span>

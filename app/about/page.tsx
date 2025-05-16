@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '../navbar/page';
 import Footer from '../footer/page';
-import PopupForm2 from '../pop-form2/page';
+import PopupForm2 from '../../components/pop-form2/page';
 import { useState } from 'react';
 
 export default function AboutPage() {
-    const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="font-sans text-gray-800">
       <Navbar />
@@ -33,7 +33,7 @@ export default function AboutPage() {
             About SolarNaija
           </motion.h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Empowering Homes & Businesses with Clean, Reliable Solar Energy Across Nigeria.
+            Empowering Homes &amp; Businesses with Clean, Reliable Solar Energy Across Nigeria.
           </p>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <p className="text-lg leading-relaxed">
             At SolarNaija, our mission is to make solar energy accessible, affordable, and trusted across Nigeria. 
             We believe every home and business deserves energy independence — free from outages, high bills, and harmful emissions.
-            Whether you're a homeowner, business owner, or partner, we provide modern solar solutions that deliver real results.
+            Whether you&apos;re a homeowner, business owner, or partner, we provide modern solar solutions that deliver real results.
           </p>
         </motion.div>
       </section>
@@ -144,16 +144,15 @@ export default function AboutPage() {
       <section className="bg-green-700 text-white text-center py-20 px-6">
         <h2 className="text-3xl font-bold mb-4">Ready to Join the Solar Movement?</h2>
         <p className="text-lg mb-8 max-w-xl mx-auto">
-          Whether you're a customer or a partner, we're here to help you power your life with solar. Let's build a cleaner Nigeria together.
+          Whether you&apos;re a customer or a partner, we&apos;re here to help you power your life with solar. Let&apos;s build a cleaner Nigeria together.
         </p>
         <div className="space-x-4">
-          
-            <button 
+          <button 
             onClick={() => setShowModal(true)}
-            className="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-green-100 transition">
-              Become a Partner
-            </button>
-        
+            className="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-green-100 transition"
+          >
+            Become a Partner
+          </button>
           <a href="/">
             <button className="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-green-700 transition">
               Explore Solar Packages

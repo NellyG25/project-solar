@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const data = [
   {
@@ -40,7 +41,7 @@ const SolarSolution = () => {
         viewport={{ once: true }}
         className="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
       >
-        We're building a future powered by clean energy solutions.
+        We&apos;re building a future powered by clean energy solutions.
       </motion.h2>
 
       <motion.p
@@ -68,11 +69,15 @@ const SolarSolution = () => {
             <a href="#" className="text-sm text-green-500 font-medium hover:underline">
               Read More →
             </a>
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-40 object-cover mt-4 rounded"
-            />
+            <div className="relative w-full h-40 mt-4 rounded overflow-hidden">
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover"
+                priority={index === 0} // optional: prioritize loading the first image
+              />
+            </div>
           </motion.div>
         ))}
       </div>

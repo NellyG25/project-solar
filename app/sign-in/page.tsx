@@ -10,7 +10,7 @@ export default function SignUpPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-100 to-white flex items-center justify-center px-4 py-10">
-       <Navbar2/>
+      <Navbar2 />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -46,7 +46,7 @@ export default function SignUpPage() {
             transition={{ duration: 0.5 }}
             className="text-center text-green-600 text-lg font-medium"
           >
-            🎉 Thank you for signing up! We'll reach out with your solar assessment shortly.
+            🎉 Thank you for signing up! We&apos;ll reach out with your solar assessment shortly.
           </motion.div>
         ) : (
           <motion.form

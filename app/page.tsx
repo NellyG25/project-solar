@@ -11,7 +11,7 @@ import FourthSection from "./fourth-section/page";
 import Pricing from "./pricing/page";
 import FifthSection from "./fifth-section/page";
 import Footer from "./footer/page";
-import PopupForm from "./pop-form/page";
+import PopupForm from "../components/pop-form/page";
 import SolarSolution from "./sixth-section/page";
 import Partner from './partner/page';
 import FounderMessage from './founder/FounderMessage';

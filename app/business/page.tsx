@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Navbar from '../navbar/page';
 import Footer from '../footer/page';
 import { useState } from 'react';
-import PopupForm2 from '../pop-form2/page'; // Adjust path if needed
+import PopupForm2 from '../../components/pop-form2/page'; // Adjust path if needed
 
 export default function PartnerWithSolarNaija() {
   const [showModal, setShowModal] = useState(false);

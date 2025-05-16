@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react';
 import Image from 'next/image'; // Import Next.js Image component
 import { FaSolarPanel, FaBatteryHalf, FaTools, FaChartLine, FaWarehouse } from 'react-icons/fa'; // Import icons from react-icons
